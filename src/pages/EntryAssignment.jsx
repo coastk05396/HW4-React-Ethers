@@ -101,7 +101,7 @@ const EntryAssignment = () => {
      * 注意: 由於開發時頁面會重新刷新，會導致 setInterval 無法清除，因此請透過 useEffect 中的 return 清除 setInterval
      * 參考資料: https://developer.mozilla.org/zh-TW/docs/Web/API/setInterval
      */
-    let interval;
+    var interval;
     if (contract) {
       interval = window.setInterval(async () => {
         const _counter = await contract.counter();
